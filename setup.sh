@@ -137,12 +137,18 @@ brew cask install firefox
 brew cask install brave
 brew cask install caffeine
 brew cask install google-backup-and-sync
+brew cask install dotnet-sdk
+brew cask install azure-data-studio
+brew cask install microsoft-azure-storage-explorer
+brew cask install postman
+brew cask install filezilla
 brew install git
 brew install git-lfs 
 brew install wget
 brew install zsh 
 brew install node
-brew cask install dotnet-sdk
+brew install tree
+
 
 
 ### Run Brew Cleanup
@@ -303,6 +309,24 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
 # Disable the all too sensitive backswipe on trackpads
 defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
+
+
+###########
+# X Code
+###########
+
+if type xcode-select >&- && xpath=$( xcode-select --print-path ) &&
+	test -d "${xpath}" && test -x "${xpath}" ; then
+	echo "Xcode already installed. Skipping."
+else
+	echo "Installing Xcode…"
+	xcode-select --install
+	echo "Xcode installed!"
+fi
+
+if [ ! -d "$HOME/.bin/" ]; then
+	mkdir "$HOME/.bin"
+fi
 
 echo ""
 cecho "Done!" $cyan
