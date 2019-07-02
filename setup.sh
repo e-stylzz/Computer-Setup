@@ -141,7 +141,7 @@ brew cask install dotnet-sdk
 brew cask install azure-data-studio
 brew cask install microsoft-azure-storage-explorer
 brew cask install postman
-brew cask install filezilla
+# brew cask install filezilla #- Seems to be on the naughty list.
 brew install git
 brew install git-lfs 
 brew install wget
