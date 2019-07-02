@@ -10,3 +10,8 @@ Todo
 4. etc.
 5. OhMyZsh
 6. BulletTrain them for OhMyZsh
+
+## Directions - From new computer
+
+curl --remote-name https://raw.githubusercontent.com/e-stylzz/Computer-Setup/master/setup.sh
+sh setup.sh
