@@ -134,7 +134,7 @@ brew cask install vlc
 brew cask install visual-studio-code
 brew cask install google-chrome
 brew cask install firefox
-brew cask install brave
+brew cask install brave-browser
 brew cask install caffeine
 brew cask install google-backup-and-sync
 brew cask install dotnet-sdk
