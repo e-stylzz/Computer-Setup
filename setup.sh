@@ -329,6 +329,11 @@ if [ ! -d "$HOME/.bin/" ]; then
 	mkdir "$HOME/.bin"
 fi
 
+echo "Updating default shell to ZSH"
+chsh -s /bin/zsh
+echo "Installing Oh-My-Zsh"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 echo ""
 cecho "Done!" $cyan
 echo ""
