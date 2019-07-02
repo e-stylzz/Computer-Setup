@@ -145,6 +145,7 @@ brew cask install filezilla
 brew install git
 brew install git-lfs 
 brew install wget
+brew install curl
 brew install zsh 
 brew install node
 brew install tree
