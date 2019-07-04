@@ -141,6 +141,7 @@ brew cask install dotnet-sdk
 brew cask install azure-data-studio
 brew cask install microsoft-azure-storage-explorer
 brew cask install postman
+brew cask install powershell
 # brew cask install filezilla #- Seems to be on the naughty list.
 brew install git
 brew install git-lfs 
@@ -149,7 +150,7 @@ brew install curl
 brew install zsh 
 brew install node
 brew install tree
-
+brew install azure-cli
 
 
 ### Run Brew Cleanup
