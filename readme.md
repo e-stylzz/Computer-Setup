@@ -2,16 +2,14 @@
 
 Script to automate computer setup (OSX).
 
-Todo
-
-1. Alises
-2. ZSH Config
-3. VSCode setup
-4. etc.
-5. OhMyZsh
-6. BulletTrain them for OhMyZsh
-
 ## Directions - From new computer
 
 curl --remote-name https://raw.githubusercontent.com/e-stylzz/Computer-Setup/master/setup.sh
 sh setup.sh
+
+
+Todo
+1. Install global NPM packages (ie angular cli, nativescript, vtop)
+2. Create Folder structure for Projects
+3. Git clone projects into folders maybe
+4. Create SQL Container
