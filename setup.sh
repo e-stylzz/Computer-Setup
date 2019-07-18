@@ -142,6 +142,23 @@ brew cask install microsoft-azure-storage-explorer
 brew cask install postman
 brew cask install powershell
 brew cask install angry-ip-scanner
+brew cask install figma
+brew cask install kap
+brew cask install spotify
+brew cask install tor-browser
+brew cask install tweeten
+brew cask install wireshark
+brew cask install openemu
+brew cask install atom
+brew cask install boostnote
+brew cask install cloudapp
+brew cask install fiddler
+brew cask install now
+brew cask install origin
+brew cask install pgadmin4
+brew cask install mongodb-compass-community
+brew cask install mongotron
+brew cask install sketch
 # brew cask install filezilla #- Seems to be on the naughty list.
 brew install git
 brew install git-lfs 
@@ -153,6 +170,13 @@ brew install node
 brew install tree
 brew install azure-cli
 brew install tmux
+brew install mas
+brew install go
+brew install mkcert
+brew install heroku
+#brew install carthage
+#brew install azure-functions-core-tools
+
 
 
 ### Run Brew Cleanup
