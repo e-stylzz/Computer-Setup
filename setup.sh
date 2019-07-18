@@ -129,7 +129,6 @@ brew cask install flux
 brew cask install hyper
 brew cask install iterm2
 brew cask install docker
-brew cask install slack
 brew cask install vlc
 brew cask install visual-studio-code
 brew cask install google-chrome
@@ -142,15 +141,35 @@ brew cask install azure-data-studio
 brew cask install microsoft-azure-storage-explorer
 brew cask install postman
 brew cask install powershell
+brew cask install figma
+brew cask install kap
+brew cask install spotify
+brew cask install tor-browser
+brew cask install tweeten
+brew cask install wireshark
+brew cask install openemu
+brew cask install atom
+brew cask install boostnote
+brew cask install cloudapp
+brew cask install fiddler
+brew cask install now
+brew cask install origin
+brew cask install pgadmin4
+brew cask install mongodb-compass-community
+brew cask install mongotron
+brew cask install sketch
+
 # brew cask install filezilla #- Seems to be on the naughty list.
 brew install git
 brew install git-lfs 
 brew install wget
 brew install curl
 brew install zsh 
+brew install zsh-completions
 brew install node
 brew install tree
 brew install azure-cli
+brew install mas
 
 
 ### Run Brew Cleanup
@@ -173,7 +192,6 @@ brew cask install font-fira-code
 echo "Installing apps from the App Store..."
 
 ### find app ids with: mas search "app name"
-brew install mas
 
 ### Mas login is currently broken on mojave. See:
 ### Login manually for now.
@@ -185,11 +203,19 @@ echo "Is app store login complete.(y/n)? "
 read response
 if [ "$response" != "${response#[Yy]}" ]
 then
-	mas install 1295203466  # Microsoft Remote Desktop
-	mas install 404010395  # Text Wrangler
-	mas install 526298438  # Lightshot
-	mas install 823766827 # One Drive
-	mas install 1278508951  # Trello
+	mas install 1295203466  	# Microsoft Remote Desktop
+	mas install 404010395  		# Text Wrangler
+	mas install 526298438  		# Lightshot
+	mas install 823766827 		# One Drive
+	mas install 1278508951  	# Trello
+	mas install 871033113 		# 2048
+	mas install 682658836 		# GarageBand 
+	mas install 409203825 		# Numbers
+	mas install 497799835 		# Xcode
+	mas install 409201541 		# Pages
+	mas install 803453959		# Slack
+	mas install 967004861 		# HP Easy Scan
+	mas install 1037126344		# Apple Configurator 2
 else
 	cecho "App Store login not complete. Skipping installing App Store Apps" $red
 fi
