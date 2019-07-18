@@ -170,6 +170,12 @@ brew install node
 brew install tree
 brew install azure-cli
 brew install mas
+brew install tmux
+brew install go
+brew install mkcert
+brew install heroku
+#brew install carthage
+#azure-functions-core-tools
 
 
 ### Run Brew Cleanup
