@@ -152,14 +152,12 @@ brew cask install openemu
 brew cask install atom
 brew cask install boostnote
 brew cask install cloudapp
-brew cask install fiddler
 brew cask install now
 brew cask install origin
 brew cask install pgadmin4
 brew cask install mongodb-compass-community
 brew cask install mongotron
 brew cask install sketch
-# brew cask install filezilla #- Seems to be on the naughty list.
 brew install git
 brew install git-lfs 
 brew install wget
@@ -173,11 +171,8 @@ brew install tmux
 brew install mas
 brew install go
 brew install mkcert
-brew install heroku
 #brew install carthage
 #brew install azure-functions-core-tools
-
-
 
 ### Run Brew Cleanup
 brew cleanup
@@ -197,12 +192,6 @@ brew cask install font-fira-code
 #############################################
 
 echo "Installing apps from the App Store..."
-
-### find app ids with: mas search "app name"
-
-### Mas login is currently broken on mojave. See:
-### Login manually for now.
-
 cecho "Need to log in to App Store manually to install apps with mas...." $red
 echo "Opening App Store. Please login."
 open "/Applications/App Store.app"
@@ -232,16 +221,13 @@ fi
 ### Set OSX Preferences - Borrowed from https://github.com/mathiasbynens/dotfiles/blob/master/.macos
 #############################################
 
-# Close any open System Preferences panes, to prevent them from overriding
-# settings we’re about to change
+# Close any open System Preferences panes, to prevent them from overriding settings we’re about to change
 osascript -e 'tell application "System Preferences" to quit'
 
 
-##################
+##############################
 ### Finder, Dock, & Menu Items
-##################
-
-
+##############################
 
 # Keep folders on top when sorting by name
 defaults write com.apple.finder _FXSortFoldersFirst -bool true
@@ -292,9 +278,9 @@ defaults write com.apple.dock show-recents -bool false
 # 	"/System/Library/CoreServices/Menu Extras/Battery.menu" \
 # 	"/System/Library/CoreServices/Menu Extras/Clock.menu"
 
-##################
+############################
 ### Text Editing / Keyboards
-##################
+############################
 
 # Disable smart quotes and smart dashes
 # defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
