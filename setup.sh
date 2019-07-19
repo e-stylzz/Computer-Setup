@@ -158,6 +158,7 @@ brew cask install pgadmin4
 brew cask install mongodb-compass-community
 brew cask install mongotron
 brew cask install sketch
+brew cask install kitematic
 brew install git
 brew install git-lfs 
 brew install wget
