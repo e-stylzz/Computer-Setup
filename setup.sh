@@ -207,12 +207,22 @@ then
 	mas install 1278508951  	# Trello
 	mas install 871033113 		# 2048
 	mas install 682658836 		# GarageBand 
-	mas install 409203825 		# Numbers
 	mas install 497799835 		# Xcode
-	mas install 409201541 		# Pages
 	mas install 803453959		# Slack
 	mas install 967004861 		# HP Easy Scan
 	mas install 1037126344		# Apple Configurator 2
+	mas install 784801555		# Microsoft OneNote
+	
+	# Apple Office Products
+	# mas install 409201541 		# Pages
+	# mas install 409203825 		# Numbers
+	# Microsoft Office Products
+	mas install 462058435		# Microsoft Excel
+	# mas install 985367838		# Microsoft Outlook
+	# mas install 462054704		# Microsoft Word
+	# mas install 462062816		# Microsoft Powerpoint
+
+
 else
 	cecho "App Store login not complete. Skipping installing App Store Apps" $red
 fi
