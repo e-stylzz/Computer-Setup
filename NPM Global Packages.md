@@ -2,9 +2,6 @@
 - @aws-amplify/cli
 - @nativescript/schemantics
 - amplify
-- azure-cli
-- bower
-- cordova
 - create-react-app
 - create-react-native-app
 - eslint
