@@ -172,6 +172,7 @@ brew install tmux
 brew install mas
 brew install go
 brew install mkcert
+brew install libdvdcss # Something for HandBrake
 #brew install carthage
 #brew install azure-functions-core-tools
 
