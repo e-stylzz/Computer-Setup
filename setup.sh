@@ -132,7 +132,6 @@ brew cask install flux
 brew cask install hyper
 brew cask install iterm2
 brew cask install docker
-brew cask install slack
 brew cask install vlc
 brew cask install visual-studio-code
 brew cask install google-chrome
@@ -149,16 +148,38 @@ brew cask install angry-ip-scanner
 #PENDING- brew cask install insomnia
 #PENDING- brew cask install alfred
 # brew cask install filezilla #- Seems to be on the naughty list.
+brew cask install figma
+brew cask install kap
+brew cask install spotify
+brew cask install tor-browser
+brew cask install tweeten
+brew cask install wireshark
+brew cask install openemu
+brew cask install atom
+brew cask install boostnote
+brew cask install cloudapp
+brew cask install now
+brew cask install origin
+brew cask install pgadmin4
+brew cask install mongodb-compass-community
+brew cask install mongotron
+brew cask install sketch
+brew cask install kitematic
 brew install git
 brew install git-lfs 
 brew install wget
 brew install curl
 brew install zsh 
 brew install nvm
+brew install zsh-completions
 brew install tree
 brew install azure-cli
 brew install tmux
-
+brew install mas
+brew install go
+brew install mkcert
+brew install libdvdcss # Something for HandBrake
+#brew install carthage
 
 ### Run Brew Cleanup
 echo "Cleaning up..."
@@ -182,13 +203,6 @@ brew cask install font-fira-code
 #############################################
 
 echo "Installing apps from the App Store..."
-
-### find app ids with: mas search "app name"
-brew install mas
-
-### Mas login is currently broken on mojave. See:
-### Login manually for now.
-
 cecho "Need to log in to App Store manually to install apps with mas...." $red
 echo "Opening App Store. Please login."
 open "/Applications/App Store.app"
@@ -196,11 +210,29 @@ echo "Is app store login complete.(y/n)? "
 read response
 if [ "$response" != "${response#[Yy]}" ]
 then
-	mas install 1295203466  # Microsoft Remote Desktop
-	mas install 404010395  # Text Wrangler
-	mas install 526298438  # Lightshot
-	mas install 823766827 # One Drive
-	mas install 1278508951  # Trello
+	mas install 1295203466  	# Microsoft Remote Desktop
+	mas install 404010395  		# Text Wrangler
+	mas install 526298438  		# Lightshot
+	mas install 823766827 		# One Drive
+	mas install 1278508951  	# Trello
+	mas install 871033113 		# 2048
+	mas install 682658836 		# GarageBand 
+	mas install 497799835 		# Xcode
+	mas install 803453959		# Slack
+	mas install 967004861 		# HP Easy Scan
+	mas install 1037126344		# Apple Configurator 2
+	mas install 784801555		# Microsoft OneNote
+	
+	# Apple Office Products
+	# mas install 409201541 		# Pages
+	# mas install 409203825 		# Numbers
+	# Microsoft Office Products
+	mas install 462058435		# Microsoft Excel
+	# mas install 985367838		# Microsoft Outlook
+	# mas install 462054704		# Microsoft Word
+	# mas install 462062816		# Microsoft Powerpoint
+
+
 else
 	cecho "App Store login not complete. Skipping installing App Store Apps" $red
 fi
@@ -210,16 +242,13 @@ fi
 ### Set OSX Preferences - Borrowed from https://github.com/mathiasbynens/dotfiles/blob/master/.macos
 #############################################
 
-# Close any open System Preferences panes, to prevent them from overriding
-# settings we’re about to change
+# Close any open System Preferences panes, to prevent them from overriding settings we’re about to change
 osascript -e 'tell application "System Preferences" to quit'
 
 
-##################
+##############################
 ### Finder, Dock, & Menu Items
-##################
-
-
+##############################
 
 # Keep folders on top when sorting by name
 defaults write com.apple.finder _FXSortFoldersFirst -bool true
@@ -270,9 +299,9 @@ defaults write com.apple.dock show-recents -bool false
 # 	"/System/Library/CoreServices/Menu Extras/Battery.menu" \
 # 	"/System/Library/CoreServices/Menu Extras/Clock.menu"
 
-##################
+############################
 ### Text Editing / Keyboards
-##################
+############################
 
 # Disable smart quotes and smart dashes
 # defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
