@@ -125,6 +125,9 @@ brew cask install spectacle
 defaults write com.divisiblebyzero.Spectacle StartAtLogin -bool true
 # defaults write com.divisiblebyzero.Spectacle ShowPrefsOnNextStart -bool false
 
+#PENDING - Replacement to Spectacle  https://github.com/rxhanson/Rectangle
+#brew cask install rectangle
+
 brew cask install flux
 brew cask install hyper
 brew cask install iterm2
@@ -143,21 +146,27 @@ brew cask install microsoft-azure-storage-explorer
 brew cask install postman
 brew cask install powershell
 brew cask install angry-ip-scanner
+#PENDING- brew cask install insomnia
+#PENDING- brew cask install alfred
 # brew cask install filezilla #- Seems to be on the naughty list.
 brew install git
 brew install git-lfs 
 brew install wget
 brew install curl
 brew install zsh 
-brew install node
+brew install nvm
 brew install tree
 brew install azure-cli
 brew install tmux
 
 
 ### Run Brew Cleanup
+echo "Cleaning up..."
 brew cleanup
 
+echo "Installing Azure Functions..."
+brew tap azure/functions
+brew install azure-functions-core-tools
 
 #############################################
 ### Fonts
