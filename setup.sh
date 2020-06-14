@@ -165,6 +165,7 @@ brew cask install mongodb-compass-community
 brew cask install mongotron
 brew cask install sketch
 brew cask install kitematic
+brew cask install responsively
 brew install git
 brew install git-lfs 
 brew install wget
