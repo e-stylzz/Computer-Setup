@@ -138,7 +138,7 @@ brew cask install google-chrome
 brew cask install firefox
 brew cask install brave-browser
 brew cask install caffeine
-brew cask install google-backup-and-sync
+#brew cask install google-backup-and-sync
 brew cask install dotnet-sdk
 brew cask install azure-data-studio
 brew cask install microsoft-azure-storage-explorer
@@ -181,6 +181,7 @@ brew install go
 brew install mkcert
 brew install libdvdcss # Something for HandBrake
 #brew install carthage
+brew install --cask flutter
 
 ### Run Brew Cleanup
 echo "Cleaning up..."
