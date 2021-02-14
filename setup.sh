@@ -182,6 +182,9 @@ brew install mkcert
 brew install libdvdcss # Something for HandBrake
 #brew install carthage
 brew install --cask flutter
+brew cask install virtualbox
+brew cask install vagrant
+brew cast install vagrant-manager
 
 ### Run Brew Cleanup
 echo "Cleaning up..."
