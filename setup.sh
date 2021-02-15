@@ -183,6 +183,12 @@ brew install libdvdcss # Something for HandBrake
 #brew install carthage
 brew install --cask flutter
 brew cask install virtualbox
+
+# HashiCorp Stuff
+brew tap hashicorp/tap
+brew install hashicorp/tap/consul
+brew install hashicorp/tap/packer
+brew install hashicorp/tap/terraform
 brew cask install vagrant
 brew cast install vagrant-manager
 
